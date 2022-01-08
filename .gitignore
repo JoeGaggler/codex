@@ -1,0 +1,8 @@
+# do not track app layout
+.obsidian/workspace
+
+# do not track starred files
+.obsidian/starred.json
+
+# macOS lint
+.DS_Store
