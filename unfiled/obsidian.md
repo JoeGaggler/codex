@@ -11,6 +11,7 @@ just files, simple backup and restore
 `ctrl+p` for commands, partial search
 hotkeys for almost anything
 spellchecker
+tap CMD while hovering link to show popup preview of note
 
 ### links
 partial text search popup after open brackets
