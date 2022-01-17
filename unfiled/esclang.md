@@ -2,13 +2,14 @@ ideas for a programming language project
 
 -----
 
-for a faster implementation, imitate scope of QBasic...
+for a quicker implementation, imitate scope of QBasic...
 
-compiles to a C# CLI project
+compiles to a C# CLI project (or create an interpreter?)
 only built-in types
 no project, single file as input
 no imports
 no generics
+no polymorphism
 
 -----
 
@@ -19,6 +20,21 @@ basic syntax
 x :: 0
 y :: true
 z :: "hello, world"
+
+// statements
+x = x + 1
+y = (!y && x == 2) || (y && x == 0)
+z.uppercase()
+
+// minimal loop syntax, different semantics using explicit control flow
+loop {
+	break x > 2 // while-loop when at the front, do-while when at the back
+}
+
+// minimal conditional syntax, else and else-if via inverse condition
+if x == 1 {
+
+}
 
 // procedures
 doStuff1 :: () {
@@ -36,23 +52,14 @@ doStuff3 :: (a: int, b: int) -> int {
 ```
 
 -----
+eliminating semicolons
 
-importing
+seems like a challenge to parse statements that can span multiple lines without relying on an end-of-statement token.
 
-```
-you :: #import nuget MyCompany.MyPackage
+currently see two possibilities when seeing an end-of-line token:
+* if the current line represents a complete statement, stop
+* peek at the next token to see if it can augment the current statement
 
-foo :: you.YourClass() // compiled: var foo = new MyCompany.MyPackage.YourClass();
-```
+the first one seems less complicated, so we'll start there
 
 -----
-
-mapping to built-in types and members
-
-```
-Number   :: #native int
-toString :: (#this: Number) -> String #native ToString
-```
-says:
-* `Number` is a type that is actually the native type `int`
-* `toString` is a method on `Number` that is actually the native type's `ToString` method

@@ -38,4 +38,8 @@ new notes to `unfiled`
 
 ## git
 open vault to repo root
-add `.obsidian/workspace` to `.gitignore` to avoid persisting app state
+
+### gitignore
+avoid persisting state belonging to one person
+* `.obsidian/workspace` - app state, like open files
+* `.obsidian/starred.json` - favorites
