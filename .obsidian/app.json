@@ -6,5 +6,6 @@
   "attachmentFolderPath": "media",
   "promptDelete": false,
   "newFileFolderPath": "unfiled",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
 }
