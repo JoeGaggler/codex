@@ -23,12 +23,12 @@ z :: "hello, world"
 
 // statements
 x = x + 1
-y = (!y && x == 2) || (y && x == 0)
+y = (~y && x == 2) || (y && x == 0)
 z.uppercase()
 
 // minimal loop syntax, different semantics using explicit control flow
 loop {
-	break x > 2 // while-loop when at the front, do-while when at the back
+	escape if x > 2 // while-loop when at the front, do-while when at the back
 }
 
 // minimal conditional syntax, else and else-if via inverse condition
