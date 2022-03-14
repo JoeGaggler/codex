@@ -20,6 +20,18 @@ set variable:
 
 #todo - see if `convertToJson` works to convert complex yaml parameters to json strings
 
+https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops#converttojson
+
 ```powershell
 $myconfig = '${{ convertToJson(parameters.config) }}' | ConvertFrom-Json -Depth 10
 ```
+
+-----
+
+static variables are not available inside of a template invocation. you must pass these as parameters instead. source?
+
+----
+
+if you want to use static variables in the same scope, the `variables` section must appear before their usage.
+
+example: trying to use a stage-variable to control a stage-displayName
