@@ -35,3 +35,12 @@ static variables are not available inside of a template invocation. you must pas
 if you want to use static variables in the same scope, the `variables` section must appear before their usage.
 
 example: trying to use a stage-variable to control a stage-displayName
+
+----
+
+when consuming a pipeline resource, you can access [variables from a triggering pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/resources-pipelines-pipeline?view=azure-pipelines#the-pipeline-resource-metadata-as-predefined-variables) via runtime-variables:
+
+```yaml
+variables:
+  MyVar: $[ variables['resources.pipeline.<ALIAS>.runID'] ]
+```
