@@ -36,6 +36,10 @@ tags are hierarchical?
 ## customizations
 new notes to `unfiled`
 
+### shortcuts
+* ctrl+shift+enter - "extract current selection" to quickly split notes
+* ctrl+enter - "extract heading"
+
 ## git
 open vault to repo root
 
@@ -43,3 +47,4 @@ open vault to repo root
 avoid persisting state belonging to one person
 * `.obsidian/workspace` - app state, like open files
 * `.obsidian/starred.json` - favorites
+

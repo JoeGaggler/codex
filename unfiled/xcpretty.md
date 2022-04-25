@@ -1,0 +1,1 @@
+install: `sudo gem install xcpretty`

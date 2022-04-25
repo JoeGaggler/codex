@@ -16,6 +16,8 @@ set variable:
 
 [pipeline resources](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/about-resources?view=azure-devops&tabs=yaml)
 
+[predefined variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml)
+
 ----
 
 #todo - see if `convertToJson` works to convert complex yaml parameters to json strings
