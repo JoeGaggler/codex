@@ -50,3 +50,13 @@ values in `env:` do not allow recursive expansion. workaround by appending to sp
   run: |
     echo "MY_PATH=${GITHUB_WORKSPACE}/my_file" >> $GITHUB_ENV
 ```
+
+## calling workflows
+similar to `template` in Azure Pipelines, except more like a function call than macro expansion
+
+a job that calls a workflow cannot have an `environment`, only jobs that have steps
+
+call depth is limited to `2`, in effect you can have `stages` and `jobs` like in Azure Pipelines
+
+in the ui, the name of the job consists of the caller and callee: `caller_name / callee_name`
+
