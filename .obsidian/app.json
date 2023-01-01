@@ -1,0 +1,11 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "spellcheck": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "unfiled",
+  "attachmentFolderPath": "media",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false
+}
