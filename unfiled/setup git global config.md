@@ -9,7 +9,7 @@ git config --global push.autoSetupRemote true
 # signing
 
 ## create key
-#todo: creating an ssh key for git
+[[generate a new ssh key]]
 
 ## setup allowed signers
 ```bash
