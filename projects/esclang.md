@@ -19,3 +19,9 @@ there is some justification for "eliminating the semicolon" above personal prefe
 - languages like [[swift]] have done it already
 - seems intuitive that readability correlates with having a single statement per line
 - increasing code density per line could better accomplished via other abstractions, e.g. a `for` loop with its initialization, condition, and iterator.
+
+# scratchpad
+quick notes that might actually be terrible ideas
+
+## syntax: parentheses are always tuples
+function call is just a tuple of parameters
