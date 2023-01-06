@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:log/",
@@ -21,10 +21,10 @@
   "nodeSizeMultiplier": 1.49347737630208,
   "lineSizeMultiplier": 5,
   "collapse-forces": false,
-  "centerStrength": 0.330240885416667,
-  "repelStrength": 12.9475911458333,
-  "linkStrength": 0.756591796875,
-  "linkDistance": 205,
-  "scale": 1,
-  "close": false
+  "centerStrength": 0.631510416666667,
+  "repelStrength": 16.845703125,
+  "linkStrength": 0.735392252604167,
+  "linkDistance": 90,
+  "scale": 0.7310540906165968,
+  "close": true
 }
