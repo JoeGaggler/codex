@@ -1,2 +1,1 @@
-a networking app i plan on developing
-
+just a namespace for now

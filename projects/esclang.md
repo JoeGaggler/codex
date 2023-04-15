@@ -28,8 +28,5 @@ c# keywords such as `if` and `while` require parentheses to avoid ambiguity with
 # scratchpad
 quick notes that might actually be terrible ideas
 
-## syntax: parentheses are always tuples?
-function call is just a tuple of parameters
-
 ## single-statement operator
 assuming that single-statement bodies are popular and adding braces around them are annoying, then [[#eliminate parentheses around conditionals|avoiding ambiguity]] likely requires an delineating operator, perhaps the arrow: `if condition -> launch()`

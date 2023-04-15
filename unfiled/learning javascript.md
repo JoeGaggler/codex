@@ -204,3 +204,35 @@ let x = 1;
 let y = 2;
 let z = `${x}, ${y}`; // Note the backticks instead of quotes
 ```
+
+# modules
+
+## export
+```js
+const foo = () => {
+
+};
+
+export { foo }; // exports function
+export default foo; // exports function as the default
+```
+
+## import
+```js
+import { foo } from './module' // No '.js'
+foo();
+
+import bar from './module' // Import the default with a different name
+bar();
+```
+
+# visual studio code
+install `eslint`
+
+# built-in
+arrays have `map` :
+```js
+let a = [1, 2, 3];
+let b = a.map((n) => n + 1);
+let c = a.map((n, index) => n + index);
+```
