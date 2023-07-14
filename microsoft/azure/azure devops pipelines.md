@@ -1,3 +1,27 @@
+# build number
+
+default pipeline number:  `$(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)`
+
+```yaml
+variables:
+	${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
+	  triggerCode: p
+	${{ elseif eq(variables['Build.Reason'], 'Manual' ) }}:
+	  triggerCode: m
+	${{ elseif eq(variables['Build.Reason'], 'IndividualCI' ) }}:
+	  triggerCode: c
+	${{ elseif eq(variables['Build.Reason'], 'BatchedCI' ) }}:
+	  triggerCode: c
+	${{ elseif eq(variables['Build.Reason'], 'Schedule' ) }}:
+	  triggerCode: s
+	${{ elseif eq(variables['Build.Reason'], 'ResourceTrigger' ) }}:
+	  triggerCode: r
+	${{ else }}:
+	  triggerCode: ${{ variables['Build.Reason'] }}
+
+name: $(TeamProject)_$(SourceBranchName)_$(triggerCode)_$(Date:yyyyMMdd)$(Rev:.r)
+```
+
 # access values across stages and jobs
 [Official Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops#job-to-job-dependencies-across-stages)
 
