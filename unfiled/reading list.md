@@ -8,3 +8,6 @@
 
 # articles
 [smallest dotnet binary](https://blog.washi.dev/posts/tinysharp/)
+
+# reference
+[how cpus work](https://cpu.land/)
