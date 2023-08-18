@@ -16,9 +16,9 @@ git config --global push.autoSetupRemote true
 
 touch ~/.ssh/allowed_signers
 cat ~/.ssh/id_rsa.pub | pbcopy
-code ~/.ssh/id_rsa.pub
+code ~/.ssh/allowed_signers
 
-# Add this line:
+# Add this line, fix order as shown:
 # joegaggler@gmail.com ssh-rsa <PASTE_FROM_CLIPBOARD>
 
 git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
