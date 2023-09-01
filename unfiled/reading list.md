@@ -12,3 +12,4 @@
 # reference
 [how cpus work](https://cpu.land/)
 [AsmResolver](https://docs.washi.dev/asmresolver/guides/dotnet/index.html) - library for manipulating `exe` files, especially for dotnet
+[owasp cheatsheet](https://cheatsheetseries.owasp.org/) - technical security guidance

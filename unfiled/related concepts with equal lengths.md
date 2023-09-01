@@ -72,3 +72,9 @@ callback
 approved
 rejected
 ```
+
+## requirement
+```
+required
+optional
+```
