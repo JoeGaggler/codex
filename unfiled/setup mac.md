@@ -23,4 +23,13 @@ add ssh key
 
 install vscode
 brew install --cask visual-studio-code
+brew install swift-format
 login
+
+## java
+install via homebrew
+```
+brew install java
+```
+
+add to profile `PATH` env, follow instructions
