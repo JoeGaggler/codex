@@ -6,6 +6,16 @@ typical git setup on a computer
 git config --global push.autoSetupRemote true
 ```
 
+## global ignore
+```bash
+git config --global core.excludesfile ~/.gitignore_global
+```
+
+contents of `~/.gitignore_global`:
+```
+.DS_Store
+```
+
 # signing
 
 ## create key
