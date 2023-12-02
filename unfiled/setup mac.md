@@ -33,3 +33,6 @@ brew install java
 ```
 
 add to profile `PATH` env, follow instructions
+
+## terraform
+brew install terraform
