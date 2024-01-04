@@ -2,6 +2,8 @@
 
 default pipeline number:  `$(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)`
 
+## with build reason
+
 ```yaml
 variables:
 	${{ if eq(variables['Build.Reason'], 'PullRequest') }}:
@@ -20,6 +22,20 @@ variables:
 	  triggerCode: ${{ variables['Build.Reason'] }}
 
 name: $(TeamProject)_$(SourceBranchName)_$(triggerCode)_$(Date:yyyyMMdd)$(Rev:.r)
+```
+
+## with variables
+
+```yaml
+variables:
+  - name: buildDate
+    value: $[format('{0:yyyy}{0:MMdd}', pipeline.startTime)]
+  - name: buildRevision
+    value: $[counter(variables.buildDate, 0)]
+  - name: buildVersion
+    value: $[format('{0}_{1}_{2}', variables['Build.DefinitionName'], variables.buildDate, variables.buildRevision)]
+
+name: '$(buildVersion)'
 ```
 
 # access values across stages and jobs
