@@ -61,3 +61,20 @@ name: '$(buildVersion)'
 	  variables:
 		foo: $[ stageDependencies.one_stage.one_job.outputs['one_step.one_var'] ] ### foo=HELLO!!!
 ```
+
+# force failure for skipped stage
+work around for the issue that a timed-out approval is a skip instead of reject
+```yaml
+  - stage: checks
+    condition: not(or(canceled(), failed())) # only check viable runs
+    dependsOn:
+      - previous_stage # the stage you care about
+    jobs:
+      - job: my_check
+        condition: in(stageDependencies.previous_stage.somejob.result, 'Skipped')
+        steps:
+          - checkout: none
+          - bash: |
+              echo "##vso[task.logissue type=error]A critical stage was skipped."
+              echo "##vso[task.complete result=Failed;]"
+```

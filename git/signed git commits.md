@@ -7,5 +7,5 @@ git log --show-signature
 
 # sign last commit
 ```bash
-git commit --amend --no-edit -S
+git commit --amend --no-edit -S --reset-author
 ```

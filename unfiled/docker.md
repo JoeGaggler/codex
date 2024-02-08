@@ -11,3 +11,6 @@ run
 
 retag
 `docker tag mytagname mynewtagname`
+
+simple mount current dir
+`docker run -v.:/pathincontainer`
