@@ -56,10 +56,13 @@ name: '$(buildVersion)'
 
 - stage: two
   dependsOn: one_stage # required for access to 'one_var'
+  condition: eq(dependencies.one_stage.result, 'Succeeded')
+  variables:
+    foo: $[ dependencies.one_stage.outputs['one_job.one_step.one_var'] ] ### stage-to-job reference has different syntax than job-to-job across stages
   jobs:
 	- job:
 	  variables:
-		foo: $[ stageDependencies.one_stage.one_job.outputs['one_step.one_var'] ] ### foo=HELLO!!!
+		foo: $[ stageDependencies.one_stage.one_job.outputs['one_step.one_var'] ] ### cross-stage job-to-job reference
 ```
 
 # force failure for skipped stage

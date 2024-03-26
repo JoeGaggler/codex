@@ -24,3 +24,6 @@ verify first commit signature before push to remote:
 ```bash
 git log --show-signature
 ```
+
+# aliases
+see [[git shell aliases]]
