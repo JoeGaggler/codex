@@ -2,6 +2,9 @@
 ```
 source
 target
+
+head
+tail
 ```
 
 ## status
@@ -10,6 +13,9 @@ initiated
 succeeded
 completed
 cancelled
+
+success
+failure
 ```
 
 ## affix
@@ -24,22 +30,10 @@ initial
 current
 ```
 
-## result
-```
-success
-failure
-```
-
 ## height
 ```
 upper
 lower
-```
-
-## end
-```
-head
-tail
 ```
 
 ## extreme
@@ -71,6 +65,9 @@ callback
 ```
 approved
 rejected
+
+accept
+revert
 ```
 
 ## requirement
