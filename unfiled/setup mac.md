@@ -1,6 +1,7 @@
 ## os
 show sound in control center
 turn off natural scrolling
+turn off double-space-period in keyboard settings
 ## browser
 install edge
 turn off ads
