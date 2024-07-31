@@ -75,3 +75,15 @@ revert
 required
 optional
 ```
+
+## disposition
+```
+graceful
+forceful
+```
+
+## actor
+```
+reader
+writer
+```
