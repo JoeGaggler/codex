@@ -8,4 +8,4 @@ see also: [[reading list]]
 
 [SharpLab](https://sharplab.io/) - .NET code playground
 
-[Microsoft Keyboard](https://www.incase.com/pages/incase-designed-by-microsoft) - still waiting...
+[Microsoft Keyboard](https://www.incase.com/pages/incase-designed-by-microsoft) - the [sculpt](https://www.incase.com/collections/sculpt-ergonomic-keyboard) is taking reservations
