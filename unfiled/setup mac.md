@@ -34,13 +34,26 @@ brew install --cask dotnet-sdk
 brew install --cask ghostty
 brew install --cask visual-studio-code
 brew install swift-format
-brew install terraform
 brew install java
 brew install jj
+brew install powershell
+brew install azure-cli
+
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+
+brew install cocoapods
+
+brew install --cask google-cloud-sdk
 ```
 
 ## outlook
 turn off focused mode in reading settings
+
+## stream deck
+install stream deck from elgato
+backup/restore profile from previous machine
+install msteams plugin, enable api, activate via first button press
 
 ## other
 install [[commit mono]] font

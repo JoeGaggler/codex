@@ -10,3 +10,5 @@
 [AsmResolver](https://docs.washi.dev/asmresolver/guides/dotnet/index.html) - library for manipulating `exe` files, especially for dotnet
 [owasp cheatsheet](https://cheatsheetseries.owasp.org/) - technical security guidance
 [emit dotnet assemblies](https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-reflection-emit-persistedassemblybuilder)
+# amusing
+[the codeless code](http://thecodelesscode.com/)
