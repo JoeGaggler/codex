@@ -58,3 +58,4 @@ install msteams plugin, enable api, activate via first button press
 ## other
 install [[commit mono]] font
 install ubiquiti and restore backup
+install [azure artifacts credential provider](https://github.com/microsoft/artifacts-credprovider?tab=readme-ov-file#installation-on-linux-and-mac)
