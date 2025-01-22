@@ -58,6 +58,25 @@ again, this still looks pretty useless, but we're getting to the interesting par
 
 my plan for parameter declarations leans toward [swift closure syntax](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/#Closure-Expression-Syntax) in that the parameters are *inside* the braces.
 this makes sense because typical scope and usage of parameters is often indistinguishable from local variables.
+the first issue, then, is to distinguish it from a local, indicating that the value is assigned by the caller.
+
+we do this with angle brackets:
+```go
+myfunc := {
+    myparam: int = <>
+}
+```
+
+this allows us to specify a default value inside:
+```go
+myfunc := {
+    myparam1 := <>
+    myparam2 := <13>
+    myparam3 : int = <>
+    myparam4 : int = <13>
+}
+```
+this syntax is consistent, but note that `myparam1` cannot be type-inferred from this declaration alone.
 
 let's circle back and show explicit function type declarations. the type can be read as "code block that takes two ints":
 ```go
@@ -72,5 +91,11 @@ myfunc: {int int : char} = {
 if there are no parameters we need the initial `:` to distinguish from a parameter:
 ```go
 myfunc: {:char} = {
+```
+
+function call does not require parentheses, and parameters just follow without commas:
+```go
+// myfunc takes 3 ints
+myfunc 1 2 3
 ```
 

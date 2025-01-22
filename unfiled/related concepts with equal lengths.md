@@ -16,6 +16,9 @@ cancelled
 
 success
 failure
+
+passed
+failed
 ```
 
 ## affix
@@ -65,8 +68,10 @@ callback
 ```
 approved
 rejected
+reverted
 
 accept
+reject
 revert
 ```
 
