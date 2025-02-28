@@ -1,4 +1,5 @@
 https://steveklabnik.github.io/jujutsu-tutorial/
+https://www.visualjj.com/
 
 # existing repo
 ```sh
@@ -14,4 +15,15 @@ jj config set --user ui.default-command log
 ```toml
 [git]
 push-bookmark-prefix = "user/joe/jj-"
+
+[user]
+name = "..."
+email = "..."
+
+[ui]
+default-command = "log"
+git.subprocess = true
+editor = "code --wait -r"
+diff-editor = "vscode"
+merge-editor = "vscode"
 ```

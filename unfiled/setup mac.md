@@ -33,6 +33,7 @@ login
 brew install --cask dotnet-sdk
 brew install --cask ghostty
 brew install --cask visual-studio-code
+brew install dotnet@8
 brew install swift-format
 brew install java
 brew install jj

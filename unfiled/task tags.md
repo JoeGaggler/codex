@@ -12,5 +12,6 @@ request - work defined externally
 rescope - too big or too small
 research - work that is exploratory
 resolved - fixed
+resumed - no longer on hold
 revealed - discovered mid-project
 review - needs a meeting to discuss
